@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperSocialMedia - Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+<header class="navbar">
+    <nav>
+        <a href="../index.html" class="nav-link">Home</a>
+        <span class="nav-separator">|</span> <a href="./addPost.html" class="nav-link">addPost</a>
+    </nav>
+    <div class="profile-icon">
+        <img src="../img/me.png" alt="Profile" id="user-profile-pic">
+    </div>
+</header>
+
+
+<form id="post-form" action="../index.html" method="get">
+
+    <label for="post-textarea">Post body:</label>
+    <textarea id="post-textarea" name="message" rows="3" cols="40" placeholder="Type here..."></textarea>
+
+    <label for="chooseFile">Select File</label>
+    <input class="button" type="button" id="chooseFile" value="Choose File"/>
+
+    <label></label>
+    <input class="button" type="submit" id=submitButton value="Create Post"/>
+
+</form>
+
+
+</body>
+
+
+</html>

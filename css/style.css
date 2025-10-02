@@ -182,3 +182,72 @@ footer {
         right: 10px;
     }
 }
+
+/* ============= addPost specific =============*/
+#post-form {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 2rem 2rem;
+    background-color: lightgray;
+    border-radius: 15px;
+    align-self: center;
+    max-width: 90%;
+    padding: 1rem;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+
+@media (max-width: 768px) {
+    #post-form {
+        grid-template-columns: 100%;
+        text-align: center;
+
+    }
+
+    #post-form input,
+    #post-form textarea,
+    #post-form button {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+#post-form label {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#post-form input,
+#post-form textarea,
+#post-form button {
+    width: 50%;
+    padding: 6px;
+
+}
+
+#post-form textarea {
+    width: 90%;
+    resize: vertical;
+    height: 50px;
+    max-height: 200px;
+}
+#post-form > *:last-child {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    border-radius: 10px;
+}
+
+#submitButton{
+    background-color: lawngreen;
+}
+
+/* pseudo-element requirement */
+#post-form label::first-letter {
+    color: deeppink;
+    font-size: x-large;
+}
+
