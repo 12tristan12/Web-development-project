@@ -1,28 +1,98 @@
-<!DOCTYPE hmtl>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperSocialMedia</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>SuperSocialMedia - Home</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
     <header class="navbar">
-        <h1 class="site-title">SuperSocialMedia</h1>
         <nav>
             <a href="index.html" class="nav-link">Home</a>
-            <a href="html/addPost.html" class="nav-link">Add Post</a>
+            <span class="nav-separator">|</span> <a href="html/addPost.html" class="nav-link">addPost</a>
         </nav>
-        <img src="img/me.png" alt="Profile" class="profile-pic">
+        <div class="profile-icon">
+             <img src="img/me.png" alt="Profile" id="user-profile-pic"> 
+        </div>
     </header>
 
+    <main class="main-content-flex-container">
+        
+        <aside class="sidebar left-sidebar">
+        </aside>
+
+        <section class="posts-column">
+            <h2>Recent Posts</h2>
+
+            <article class="post post-with-photo">
+                <div class="post-header">
+                    <img src="img/me.png" alt="User" class="post-user-pic">
+                    <span class="post-date">Oct 12, 2025</span>
+                </div>
+                <img src="img/tartu.jpeg" alt="Tartu 2022" class="post-photo">
+                <div class="post-content"> 
+                    <p>Tartu 2022</p>
+                </div>
+                <button class="like-button">👍 Like</button>
+            </article>
+
+            <article class="post post-without-photo">
+                <div class="post-header">
+                    <img src="img/me.png" alt="User" class="post-user-pic">
+                    <span class="post-date">Oct 6, 2025</span>
+                </div>
+                <div class="post-content">
+                    <p>Anyone knows in which room is the lab today?</p>
+                </div>
+                <button class="like-button">👍 Like</button>
+            </article>
+            
+            <article class="post post-without-photo">
+                <div class="post-header">
+                    <img src="img/me.png" alt="User" class="post-user-pic">
+                    <span class="post-date">Oct 1, 2023</span>
+                </div>
+                <div class="post-content">
+                    <p>Where is Delta located??</p>
+                </div>
+                <button class="like-button">👍 Like</button>
+            </article>
+
+            <article class="post post-with-photo">
+                <div class="post-header">
+                    <img src="img/me.png" alt="User" class="post-user-pic">
+                    <span class="post-date">Sep 28, 2021</span>
+                </div>
+                <img src="img/code.png" alt="Code Snippet" class="post-photo">
+                <div class="post-content">
+                    <p>Need urgent help with this code!!!!</p>
+                </div>
+                <button class="like-button">👍 Like</button>
+            </article>
+            
+            <article class="post post-without-photo">
+                <div class="post-header">
+                    <img src="img/me.png" alt="User" class="post-user-pic">
+                    <span class="post-date">Sep 25, 2020</span>
+                </div>
+                <div class="post-content">
+                    <p>Who stole my bags?</p>
+                </div>
+                <button class="like-button">👍 Like</button>
+            </article>
+
+        </section>
+
+        <aside class="sidebar right-sidebar">
+            </aside>
+
+    </main>
+
+    <footer>
+        <p>SuperSocialMedia</p>
+    </footer>
 
 </body>
-
-
-
-
 </html>
