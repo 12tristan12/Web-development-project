@@ -1,0 +1,167 @@
+/* ---------- Basic layout ---------- */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flexbox for the whole page */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Header and navigation ---------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dadada;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* Pseudo-class */
+.nav a:hover {
+  background-color: #555;
+}
+
+/* Highlight current page */
+#current {
+  background-color: #777;
+}
+
+/* ---------- Main content ---------- */
+
+main {
+  width: 100%;
+  height: 600px;                
+  display: flex;
+  justify-content: center;      
+  align-items: center;          
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ---------- Login box ---------- */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px; 
+  height: 350px;
+  max-width: 90%;
+}
+
+/* ID selector */
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Descendant selector */
+.login p {
+  color: #444;
+  font-size: 14px;
+}
+
+/* Child selector */
+.login > p {
+  margin-bottom: 10px;
+}
+
+/* Form elements */
+#loginForm label {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#loginForm input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+#loginForm button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
+  color: white;
+  cursor: pointer;
+}
+
+#loginForm button:hover {
+  background-color: #555;
+}
+
+/* Adjacent sibling selector */
+.login + p {
+  color: rgb(109, 185, 216);
+  font-weight: bold;
+}
+
+/* General sibling selector */
+.login ~ p {
+  color: rgb(197, 154, 222);
+}
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    height: auto;
+    padding: 20px;
+  }
+
+  .login {
+    width: 300px;
+    height: auto;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  #loginForm input,
+  #loginForm button {
+    font-size: 1rem;
+  }
+}
