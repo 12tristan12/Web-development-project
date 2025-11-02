@@ -8,15 +8,25 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <nav>
-            <a href="html/login.html" class="nav-link">Home</a>
-            <span class="nav-separator">|</span> <a href="html/addPost.html" class="nav-link">addPost</a>
-        </nav>
-        <div class="profile-icon">
-             <img src="img/me.png" alt="Profile" id="user-profile-pic"> 
-        </div>
-    </header>
+   <header class="navbar">
+  <nav>
+    <a href="html/login.html" class="nav-link">Home</a>
+    <span class="nav-separator">|</span>
+    <a href="html/addPost.html" class="nav-link">addPost</a>
+  </nav>
+
+  <!-- replaces the old profile-icon div with menu -->
+  <details class="user-menu">
+    <summary aria-label="Open user menu">
+      <img src="img/me.png" alt="Profile" id="user-profile-pic" width="36" height="36" style="border-radius:50%">
+    </summary>
+    <ul>
+      <li><strong>John Doe</strong></li>
+      <li><a href="mailto:john.doe@ut.ee">john.doe@ut.ee</a></li>
+      <li><a href="html/login.html">logout</a></li>
+    </ul>
+  </details>
+</header>
 
     <main class="main-content-flex-container">
         
